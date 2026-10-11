@@ -5,10 +5,10 @@ Site statique HTML + CSS, sans JavaScript. Chaque page s'ouvre dans un navigateu
 
 ## Structure
 
-- `index.html` : présentation générale (les atouts et les 5 besoins concrets).
+- `index.html` : présentation générale (les atouts et les 6 besoins concrets).
 - `carte-adherent.html`, `prets-echances.html`, `rappels-notifications.html`,
-  `decouvrir-livres.html`, `listes-favoris-a-lire.html`, `deja-lu.html` : une page par
-  fonctionnalité.
+  `decouvrir-livres.html`, `listes-favoris-a-lire.html`, `deja-lu.html`,
+  `agenda-actualites.html` : une page par fonctionnalité.
 - `assets/style.css` : habillage partagé (vert de l'application).
 - `assets/captures/` : les captures d'écran des pages, déjà insérées (cliquables pour un grand format).
 
@@ -17,12 +17,13 @@ Site statique HTML + CSS, sans JavaScript. Chaque page s'ouvre dans un navigateu
 | Fichier | Page |
 |---|---|
 | `capture_CarteNumerique.png` | Carte d'adhérent (la carte numérique) |
-| `capture_Setings.png` | Carte d'adhérent (les réglages) |
+| `capture_Setings.jpg` | Carte d'adhérent (les réglages) |
 | `capture_MesPrets.png` | Prêts (liste des prêts) |
-| `capture_RéglagesNotification.png` | Rappels (réglage des rappels) |
+| `capture_RéglagesNotification.png` | Rappels (réglage des rappels, dans la page Réglages) |
 | `capture_Recherche01.png` / `capture_Recherche02.png` | Découvrir (résultat d'un scan) |
 | `capture_Favoris.png` | Favoris &amp; À lire (liste des favoris) |
-| `capture_DejaLus.png` | Déjà lu (mémoire des emprunts) |
+| `capture_DejaLus..png` | Déjà lu (mémoire des emprunts) |
+| `capture_Agenda.png` | Agenda (l'actualité de la bibliothèque) |
 
 ## Ajouter une nouvelle capture plus tard
 
