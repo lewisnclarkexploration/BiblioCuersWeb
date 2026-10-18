@@ -1,20 +1,22 @@
 /* ===== Biblio Cuers — documentation (HTML statique, sans JavaScript, imprimable) ===== */
 
 :root {
-  --green-900: #0b2e12;
-  --green-800: #1b5e20;   /* primaire (vert biblio de l'app) */
-  --green-700: #2e7d32;   /* vert « échéance ok » */
-  --green-500: #4caf50;   /* secondaire */
-  --green-100: #e7f3e7;
-  --bg: #fafdf9;
+  --brand-900: #053c91;   /* bleu marine (logo) */
+  --brand-800: #0164c0;   /* bleu primaire (icône de l'app) */
+  --brand-700: #0a6fcc;   /* bleu liens / bordures */
+  --brand-500: #48adf1;   /* bleu ciel (logo) */
+  --brand-100: #e7f1fb;   /* fonds clairs */
+  --yellow: #f9d53a;      /* accent (logo) */
+  --yellow-ink: #053c91;  /* texte sur jaune */
+  --bg: #f7fafe;
   --surface: #ffffff;
-  --ink: #22302a;
-  --muted: #5b6b63;
-  --line: #dbe7dc;
+  --ink: #12233a;
+  --muted: #51617a;
+  --line: #d6e4f2;
   --due-soon: #f57c00;    /* échéance proche */
   --overdue: #d32f2f;     /* retard */
   --radius: 14px;
-  --shadow: 0 2px 10px rgba(27, 94, 32, 0.08);
+  --shadow: 0 2px 10px rgba(1, 100, 192, 0.10);
   --font: "Segoe UI", Roboto, "Helvetica Neue", Arial, system-ui, sans-serif;
 }
 
@@ -38,8 +40,9 @@ img { max-width: 100%; }
 /* ===== En-tête ===== */
 
 .site-header {
-  background: linear-gradient(120deg, var(--green-800), var(--green-700));
+  background: linear-gradient(120deg, var(--brand-900), var(--brand-800) 65%, #2e8fd8);
   color: #fff;
+  border-bottom: 4px solid var(--yellow);
 }
 
 .site-header .wrap {
@@ -55,16 +58,17 @@ img { max-width: 100%; }
 }
 
 .brand-mark {
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
-  background: #fff;
-  color: var(--green-800);
+  width: 64px;
+  height: 64px;
   display: grid;
   place-items: center;
-  font-size: 22px;
-  font-weight: 800;
-  box-shadow: var(--shadow);
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .brand-name { font-size: 1.35rem; font-weight: 700; line-height: 1.15; }
@@ -85,7 +89,7 @@ img { max-width: 100%; }
 
 .main-nav a[aria-current="page"] {
   background: #fff;
-  color: var(--green-800);
+  color: var(--brand-800);
   font-weight: 600;
 }
 
@@ -96,7 +100,7 @@ img { max-width: 100%; }
 main { padding-bottom: 40px; }
 
 h1 { font-size: 1.9rem; line-height: 1.2; margin: 8px 0 6px; }
-h2 { font-size: 1.35rem; margin: 2.2rem 0 .6rem; color: var(--green-900); }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 .6rem; color: var(--brand-900); }
 h3 { font-size: 1.08rem; margin: 1.4rem 0 .3rem; }
 
 .lead { font-size: 1.08rem; color: var(--muted); max-width: 70ch; }
@@ -106,7 +110,7 @@ p { max-width: 74ch; }
 ul { padding-left: 1.2rem; }
 li { margin: .2rem 0; }
 
-a { color: var(--green-700); }
+a { color: var(--brand-700); }
 
 /* ===== Sections spéciales ===== */
 
@@ -119,14 +123,14 @@ a { color: var(--green-700); }
 }
 
 .points-forts {
-  background: var(--green-100);
-  border-left: 5px solid var(--green-700);
+  background: var(--brand-100);
+  border-left: 5px solid var(--brand-700);
   border-radius: var(--radius);
   padding: 16px 20px;
   margin: 24px 0;
 }
 
-.points-forts h2 { margin-top: 0; color: var(--green-800); }
+.points-forts h2 { margin-top: 0; color: var(--brand-800); }
 
 .grid {
   display: grid;
@@ -148,7 +152,7 @@ a { color: var(--green-700); }
   place-items: center;
   width: 32px; height: 32px;
   border-radius: 50%;
-  background: var(--green-800);
+  background: var(--brand-900);
   color: #fff;
   font-weight: 700;
 }
@@ -165,7 +169,7 @@ a { color: var(--green-700); }
   font-weight: 600;
 }
 
-.pill.ok { background: #e4f2e4; color: var(--ok, var(--green-700)); }
+.pill.ok { background: #e4f2e4; color: var(--ok, var(--brand-700)); }
 .pill.soon { background: #fdeedd; color: var(--due-soon); }
 .pill.late { background: #fbdede; color: var(--overdue); }
 
@@ -178,12 +182,12 @@ a { color: var(--green-700); }
   margin: 10px 0 20px;
 }
 
-.hero h1 { color: var(--green-800); margin-top: 0; }
+.hero h1 { color: var(--brand-800); margin-top: 0; }
 
 .quote {
   font-style: italic;
   color: var(--muted);
-  border-left: 4px solid var(--green-500);
+  border-left: 4px solid var(--brand-500);
   padding-left: 14px;
   margin: 18px 0;
 }
@@ -219,9 +223,9 @@ figure .shot {
 }
 
 figure .capture {
-  border: 2px dashed var(--green-500);
-  background: var(--green-100);
-  color: var(--green-700);
+  border: 2px dashed var(--brand-500);
+  background: var(--brand-100);
+  color: var(--brand-700);
   font-size: .95rem;
   padding: 20px;
   text-align: center;
@@ -232,7 +236,7 @@ figure .capture::after { display: block; margin-top: 6px; font-size: .72rem; col
 figure .shot {
   width: 250px;
   height: auto;
-  border: 8px solid var(--green-800);
+  border: 8px solid var(--brand-800);
   border-radius: 24px;
   box-shadow: var(--shadow);
   display: block;
@@ -296,8 +300,8 @@ figcaption {
 /* ===== Pied de page ===== */
 
 .site-footer {
-  background: var(--green-800);
-  color: #eaffea;
+  background: var(--brand-900);
+  color: #dcebff;
   margin-top: 20px;
 }
 
@@ -305,13 +309,13 @@ figcaption {
 
 .site-footer p { margin: 2px 0; max-width: none; }
 
-.site-footer a { color: #d4f2d4; }
+.site-footer a { color: #aee0ff; }
 
 /* ===== Impression / PDF ===== */
 
 @media print {
   body { background: #fff; }
-  .site-header { position: static; background: var(--green-800); }
+  .site-header { position: static; background: var(--brand-800); }
   .main-nav a { padding: 5px 10px; }
   .card, .hero, .needs, .points-forts { box-shadow: none; break-inside: avoid; }
   figure { break-inside: avoid; }
