@@ -184,6 +184,8 @@ a { color: var(--brand-700); }
 
 .hero h1 { color: var(--brand-800); margin-top: 0; }
 
+.hero-beta > :last-child { margin-bottom: 0; }
+
 .quote {
   font-style: italic;
   color: var(--muted);
@@ -199,6 +201,48 @@ a { color: var(--brand-700); }
   padding: 14px 16px;
   font-size: .95rem;
 }
+
+/* ===== Boutons d'action et étapes ===== */
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin: 22px 0 6px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: var(--yellow);
+  color: var(--yellow-ink);
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.button:hover { background: #f2c400; }
+
+.button.secondary {
+  background: var(--brand-800);
+  color: #fff;
+}
+
+.button.secondary:hover { background: var(--brand-900); }
+
+.button:focus-visible {
+  outline: 3px solid var(--brand-500);
+  outline-offset: 2px;
+}
+
+.steps { padding-left: 1.2rem; }
+
+.steps li { margin: 1rem 0; }
+
+.steps li > p { margin: .3rem 0; }
 
 /* ===== Captures d'écran (balises pour images à venir) ===== */
 
