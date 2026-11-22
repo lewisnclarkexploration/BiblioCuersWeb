@@ -184,6 +184,13 @@ a { color: var(--brand-700); }
 
 .hero h1 { color: var(--brand-800); margin-top: 0; }
 
+.sous-titre {
+  font-size: 1.2rem;
+  color: var(--brand-800);
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+
 .hero-beta > :last-child { margin-bottom: 0; }
 
 .quote {
