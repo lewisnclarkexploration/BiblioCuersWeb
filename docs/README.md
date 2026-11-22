@@ -9,8 +9,8 @@ Site statique HTML + CSS, sans JavaScript. Chaque page s'ouvre dans un navigateu
 - `carte-adherent.html`, `prets-echances.html`, `rappels-notifications.html`,
   `decouvrir-livres.html`, `listes-favoris-a-lire.html`, `deja-lu.html`,
   `agenda-actualites.html` : une page par fonctionnalité.
-- `beta.html` : page d'invitation au programme de bêta-test, **non listée** (absente de
-  `index.html` et de la navigation).
+- `beta.html` : page d'invitation au programme de bêta-test, **hors navigation principale** mais
+  reliée depuis un bouton dédié sur `index.html`.
 - `assets/style.css` : habillage partagé (vert de l'application).
 - `assets/captures/` : les captures d'écran des pages, déjà insérées (cliquables pour un grand format).
 
@@ -50,10 +50,10 @@ popup d'agrandissement (les images sont cliquables — popup CSS sans JavaScript
 `id` de la popup et `href` de la miniature doivent correspondre. Les images sont classées dans une
 rangée centrée : enveloppez plusieurs `<figure>` dans un `<div class="figure-row">`.
 
-## Page bêta (non listée)
+## Page bêta (hors navigation principale)
 
-`beta.html` est une page d'invitation au programme de bêta-test. Elle est **volontairement absente de
-l'index et de la navigation** : elle n'est accessible que par son lien direct.
+`beta.html` est une page d'invitation au programme de bêta-test. Elle n'apparaît pas dans la navigation
+du site, mais un lien explicite « Devenir bêta-testeur » est présent sur la page d'accueil.
 
 - URL publiée : `https://lewisnclarkexploration.github.io/BiblioCuersWeb/beta.html`
 - `<meta name="robots" content="noindex, nofollow">` pour éviter l'indexation par les moteurs de recherche.
